@@ -4,7 +4,7 @@ from PIL import ImageOps
 import tensorflow as tf
 
 # Model loading
-trained_model = tf.keras.models.load_model('model.h5')
+trained_model = tf.keras.models.load_model('metalcastdetector.h5')
 
 # Image preprocessing
 def prepare_image(file):
