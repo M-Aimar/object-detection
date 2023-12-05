@@ -21,7 +21,7 @@ Welcome to our AI-powered Metal Casting Defects Detection System! This repositor
 
 ## Data Preprocessing Pipeline
 
-**Implementation Details:** *The dataset was preprocessed to facilitate effective training of our deep learning model. 
+**Implementation Details:** The dataset was preprocessed to facilitate effective training of our deep learning model. 
 
 Data Visualization: We visualized the dataset to understand the characteristics of both defective and normal samples. This step involved reading sample images from each category and displaying them using matplotlib.
 
@@ -29,7 +29,7 @@ Data Augmentation: To enhance the robustness of our model, we employed ImageData
 
 Training and Testing Data Generation: We prepared our data for training and testing using flow_from_directory method. This included setting up directory paths, defining image dimensions (300x300 pixels), and specifying batch sizes. The classes were mapped as 'ok_front': 0 and 'def_front': 1, ensuring a binary classification setup.
 
-Handling Overfitting: To mitigate overfitting, we split our data into training and validation sets, with 40% of the images reserved for validation.*
+Handling Overfitting: To mitigate overfitting, we split our data into training and validation sets, with 40% of the images reserved for validation.
 
 ## Feature Extraction
 
@@ -37,7 +37,7 @@ Handling Overfitting: To mitigate overfitting, we split our data into training a
 
 ## Model Building
 
-**Defect Classification Model:** *_Our model's architecture was built upon the ResNet152V2 core, with custom layers added on top. The process included:
+**Defect Classification Model:** Our model's architecture was built upon the ResNet152V2 core, with custom layers added on top. The process included:
 
 Layer Configuration: We added a GlobalMaxPooling2D layer followed by a Dense layer with 256 units and 'relu' activation. The final layer was a Dense layer with a single unit and 'sigmoid' activation, suitable for binary classification.
 
@@ -45,7 +45,7 @@ Freezing Base Layers: To preserve the learned features in the ResNet152V2 model,
 
 Compilation and Training: The model was compiled using the Adam optimizer and binary cross-entropy loss. We used accuracy, AUC, Precision, and Recall as metrics. Training was performed for 10 epochs with checkpoints to save the best model based on validation AUC.
 
-Model Evaluation: Post-training, we evaluated the model using a classification report and a confusion matrix, achieving high precision and recall, indicating the model's effectiveness in classifying defects in casting products.*
+Model Evaluation: Post-training, we evaluated the model using a classification report and a confusion matrix, achieving high precision and recall, indicating the model's effectiveness in classifying defects in casting products.
 
 ## Cloud Platform Hosting and Dashboard
 
