@@ -37,7 +37,7 @@ Handling Overfitting: To mitigate overfitting, we split our data into training a
 
 ## Model Building
 
-**Defect Classification Model:** *Our model's architecture was built upon the ResNet152V2 core, with custom layers added on top. The process included:
+**Defect Classification Model:** *_Our model's architecture was built upon the ResNet152V2 core, with custom layers added on top. The process included:
 
 Layer Configuration: We added a GlobalMaxPooling2D layer followed by a Dense layer with 256 units and 'relu' activation. The final layer was a Dense layer with a single unit and 'sigmoid' activation, suitable for binary classification.
 
@@ -68,7 +68,7 @@ tensorflow
 
 ## Streamlit Dashboard
 
-**Access Our Web Application:** *(Provide the link to the hosted Streamlit dashboard where users can upload images for defect classification. Include any instructions or guidelines for using the dashboard.)*
+**Access Our Web Application:** *https://metalcastingdefectsdetector.streamlit.app/*
 
 ## Contributing
 
