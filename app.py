@@ -25,7 +25,7 @@ def detect_defect(image_file):
         return np.array([[1.0]])
 
 def run_app():
-    app.title("Metal Defect Detection Tool")
+    app.title("Metal Casting Defect Detection Tool")
 
     user_uploaded_file = app.file_uploader("Upload your metal cast image", type=["jpg", "jpeg", "png"])
 
